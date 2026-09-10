@@ -9,40 +9,41 @@ const MODEL_URL = "https://teachablemachine.withgoogle.com/models/SEU_MODELO_AQU
    Os dados abaixo são exemplos de estrutura. Substitua pelos dados reais conferidos nos rótulos.
 */
 const PRODUTOS = {
-  "Produto A": {
-    nome: "Produto A",
-    imagem: "assets/img/produtos/nao-cadastrado.svg",
-    descricao: "Exemplo de produto cadastrado. Troque este texto pela descrição do produto real.",
-    gluten: "CONTÉM GLÚTEN",
-    lactose: "CONTÉM LACTOSE",
-    calorias: "Ex.: 120 kcal / porção",
-    acucares: "Ex.: 10 g / porção",
-    sodio: "Ex.: 160 mg / porção",
-    gordura: "Ex.: 2,5 g / porção",
-    alergenos: "Exemplo: contém derivados de trigo e leite. Substitua pelo texto do rótulo.",
-    contraindicacao: "Exemplo: exige atenção de pessoas com doença celíaca e de quem precisa evitar lactose, conforme as informações cadastradas do rótulo.",
-    alternativa: "Produto B",
-    comparacao: "Exemplo: alternativa da mesma categoria com característica nutricional diferente. Explique usando valores reais dos rótulos.",
-    fonte: "Rótulo do produto — dados cadastrados manualmente.",
-    nota: "Confira sempre a embalagem física, pois o fabricante pode alterar ingredientes, alertas e tabela nutricional."
+  "Soma": {
+    nome: "Soma",
+    imagem: "assets/img/produtos/soma.jpeg",
+    descricao: "Número adicionado a outro que pode ser o mesmo número ou um resultado diferente",
+    nota: "se os números forem acima de 10 colocar um abaixo do outro priorizando o maior número encima."
   },
-  "Produto B": {
-    nome: "Produto B",
-    imagem: "assets/img/produtos/nao-cadastrado.svg",
-    descricao: "Segundo exemplo para você substituir por um produto real treinado no seu modelo.",
-    gluten: "NÃO CONTÉM GLÚTEN",
-    lactose: "NÃO CONTÉM LACTOSE",
-    calorias: "Ex.: 95 kcal / porção",
-    acucares: "Ex.: 5 g / porção",
-    sodio: "Ex.: 110 mg / porção",
-    gordura: "Ex.: 1,2 g / porção",
-    alergenos: "Copie exatamente os alérgenos declarados no rótulo.",
-    contraindicacao: "Use somente alertas ou restrições que possam ser sustentados pelas informações do rótulo; não faça diagnóstico.",
-    alternativa: "Produto A",
-    comparacao: "Compare porções equivalentes sempre que possível.",
-    fonte: "Rótulo do produto — dados cadastrados manualmente.",
-    nota: "Esta plataforma é educativa e não substitui orientação médica ou nutricional."
+  "Subtração": {
+    nome: "Subtração",
+    imagem: "assets/img/produtos/images.jpeg",
+    descricao: "Número diminuido a outro que pode ser o mesmo número ou um resultado diferente.",
+    nota: "Se o número for acima de 10 colocar um abaixo do outro priorizando o maior número acima."
   }
+  "Multiplicação": {
+    nome: "Multiplicação",
+    imagem: "assets/img/produtos/image.png",
+    descricao: "A multiplicação é apenas uma soma repetida que pode ser o mesmo número ou zero ou um resultado.",
+    nota: "Se o número for acima de 10 colocar um abaixo do outro priorizando o maior número acima."
+  }
+  "Divisão": {
+    nome: "Divisão",
+    imagem: "assets/img/produtos/images(1)",
+    descricao: "A divisão é o contrário da multiplicação: é pegar um monte de coisa e repartir em partes iguais.",
+    nota: "No papel, você desenha uma chave, coloca o número maior na esquerda, o menor dentro dela e vai fatiando e subtraindo o número da esquerda até chegar a zero."
+  }
+  "Potência": {
+    nome: "Potenciação",
+    imagem: "assets/img/produtos/nao-cadastrado.svg",
+    descricao: "potenciação é multiplicar um número que esta escrito no denominador pela quantidade dita no expoente.",
+    nota: "O número grande é quem vai ser multiplicado, e o número voando diz quantas vezes você vai repetir esse grande na conta de vezes."
+  }
+  "Radiaciação": {
+    nome: "Radiaciação",
+    imagem: "assets/img/produtos/nao-cadastrado.svg",
+    descricao: "A radiciação (raiz quadrada) é o contrário da potenciação: é descobrir qual número multiplicado por ele mesmo dá o valor que está dentro do símbolo.",
+    nota: "Se o número for gigante, dá para resolver no papel fatorando (fatiando em números primos)."
 };
 
 const MIN_CONFIDENCE=.85, STABLE_FRAMES=7;
