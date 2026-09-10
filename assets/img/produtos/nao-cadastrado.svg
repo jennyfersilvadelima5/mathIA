@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewBox="0 0 600 600">
+<rect width="600" height="600" rx="60" fill="#eef2f0"/>
+<circle cx="300" cy="260" r="120" fill="#dce5e1"/>
+<text x="300" y="310" text-anchor="middle" font-family="Arial" font-size="150" font-weight="700" fill="#83948d">?</text>
+<text x="300" y="445" text-anchor="middle" font-family="Arial" font-size="30" font-weight="700" fill="#183d33">Produto não cadastrado</text>
+<text x="300" y="485" text-anchor="middle" font-family="Arial" font-size="18" fill="#6d7b75">adicione uma imagem nesta pasta</text>
+</svg>

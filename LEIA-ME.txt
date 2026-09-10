@@ -1,0 +1,30 @@
+MEU ALIMENTO — COMO CONFIGURAR
+
+1. Abra assets/js/ia.js.
+2. Substitua SEU_MODELO_AQUI pelo código/link do modelo publicado no Teachable Machine.
+   Exemplo: https://teachablemachine.withgoogle.com/models/AbCd1234/
+3. No objeto PRODUTOS, crie uma entrada para cada classe do Teachable Machine.
+4. A chave precisa ser EXATAMENTE igual ao nome da classe treinada.
+5. Coloque as fotos em assets/img/produtos/ e informe o caminho no campo imagem.
+6. Cadastre glúten, lactose, calorias, açúcares, sódio, gordura saturada, alérgenos, alerta/contraindicação, alternativa e fonte.
+7. Use dados conferidos no rótulo. Não deixe a IA inferir informações nutricionais pela aparência.
+8. Para a câmera funcionar no celular, hospede o site em HTTPS (por exemplo, Hostinger).
+
+EXEMPLO DE CADASTRO:
+"Biscoito X": {
+  nome: "Biscoito X",
+  imagem: "assets/img/produtos/biscoito-x.png",
+  descricao: "Biscoito ...",
+  gluten: "CONTÉM GLÚTEN",
+  lactose: "NÃO CONTÉM LACTOSE",
+  calorias: "120 kcal / 30 g",
+  acucares: "8 g / 30 g",
+  sodio: "130 mg / 30 g",
+  gordura: "2 g / 30 g",
+  alergenos: "CONTÉM ...",
+  contraindicacao: "Atenção para ... conforme o rótulo.",
+  alternativa: "Biscoito Y",
+  comparacao: "...",
+  fonte: "Rótulo do produto, consultado em ...",
+  nota: "Confira sempre a embalagem física."
+}

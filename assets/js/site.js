@@ -1,0 +1,2 @@
+const menuBtn=document.querySelector('.menu-btn');const nav=document.querySelector('.nav-links');if(menuBtn&&nav){menuBtn.addEventListener('click',()=>{const open=nav.classList.toggle('open');menuBtn.setAttribute('aria-expanded',open)});nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>nav.classList.remove('open')))}
+const reveal=()=>document.querySelectorAll('.reveal').forEach(el=>{if(el.getBoundingClientRect().top<innerHeight-70)el.classList.add('visible')});addEventListener('scroll',reveal,{passive:true});reveal();
